@@ -1,0 +1,128 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Fira Sans', sans-serif;
+}
+
+body {
+    margin: 0%;
+}
+.navbar-img img{
+    width: 130px;
+    height: 130px;
+    border-radius: 10000px;
+    border: solid wheat 2px;
+}
+
+h1 { 
+    font-size: 2.6rem;
+    text-align: center;
+}
+
+p{
+    
+    text-transform: capitalize;
+}
+
+a {
+ text-decoration:  none;
+ color:white;
+font-size: 1.3rem;
+}
+
+/* for desktop */
+[class*="col-"]{
+    float: left;
+    padding: 10px;
+}
+ /* for mobail */
+
+ [class*="col-"]{
+   width: 100%;
+
+ }
+
+.navbar {
+    background-color: #0c6168;
+    padding: 1% 7%;
+    text-align: center;
+}
+
+.navbar h1{
+    color: white;
+    margin: 0;
+    padding-top: 10px;
+}
+.navbar-menu{
+    display: flex;
+  flex-direction: column;
+  text-transform: capitalizes;
+}
+
+.navbar-menu a {
+    background-color: #40868b;
+    border-radius: 10px;
+    margin: 7px 0px;
+    padding: 10px;
+}
+
+.navbar-menu a:hover{
+    background-color: grey;
+}
+
+.navbar::after {
+    content: '';
+    clear: both;
+    display: table;
+}
+
+.prifiles {
+ padding: 120px 10px;
+ position: relative;
+ text-align: center;
+ transition:transform 3s ;
+}
+
+
+.top-weather {
+    width: 120px;
+    height: 120px;
+    border-radius: 40%;
+    position: absolute;
+    right: 100px;
+    top: 5px;
+    transition: transform 3s;
+}
+
+.top-weather:hover{
+    transform: rotate(300deg);
+}
+
+.profile-dise h1 {
+     
+ font-family: 'Satisfy', cursive;
+ font-size: 3rem;
+}
+
+.profile-dise p{
+    color:gray ;
+    margin-bottom: 40px;
+}
+
+.bottom-weather-photo{
+    width: 120px;
+    height: 120px;
+    border-radius: 40%;
+    position: absolute;
+    left: 100px;
+   transition:  transform 4s ;
+}
+
+.bottom-weather-photo:hover {
+    transform: rotate(400deg);
+}
+
+.prifiles::after {
+    content: '';
+    display: table;
+    clear: both;
+}
